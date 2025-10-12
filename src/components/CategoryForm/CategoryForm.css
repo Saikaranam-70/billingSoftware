@@ -1,0 +1,68 @@
+.category-form-container {
+    padding: 20px;
+    background-color: #1E293B; /* Background/Main UI */
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+.form-card {
+    background-color: #273449; /* Card/Panel Background */
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-label {
+    color: #F1F5F9; /* Primary text */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    color: #F1F5F9;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3B82F6; /* Primary highlight */
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.25);
+}
+
+.image-label img {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.image-label img:hover {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #3B82F6; /* Primary Buttons */
+    border: none;
+    color: #F1F5F9;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #2563EB;
+}
+
+.btn-primary:disabled {
+    background-color: #64748B; /* Subtle disabled state */
+    cursor: not-allowed;
+}

@@ -1,0 +1,14 @@
+.cart-item {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 0.8rem;
+  transition: transform 0.2s ease;
+  padding: 1rem;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item .btn-sm {
+  border-radius: 0.4rem !important;
+}

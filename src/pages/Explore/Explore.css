@@ -1,4 +1,4 @@
-.explore-container {
+/* .explore-container {
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -54,20 +54,202 @@
     background-color: #2c2c2c;
     padding: 12px;
     border-radius: 8px;
+} */
+
+
+:root {
+  --background-main: #1E293B;
+  --card-bg: #273449;
+  --primary-blue: #3B82F6;
+  --secondary-blue: #0EA5E9;
+  --amber-warning: #F59E0B;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --border-radius: 16px;
 }
 
+.explore-container {
+  display: flex;
+  height: 100vh;
+  padding: 24px 28px;
+  gap: 28px;
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+/* LEFT COLUMN */
+.left-column {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 18px 24px;
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.2);
+}
 
+.first-row {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 50vh;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue) transparent;
+}
 
+.second-row {
+  flex: 2;
+  overflow-y: auto;
+  max-height: 70vh;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-blue) transparent;
+}
 
+/* horizontal line styling */
+.horizontal-line {
+  border: none;
+  border-top: 1px solid var(--text-secondary);
+  margin: 0;
+  opacity: 0.4;
+}
 
+/* RIGHT COLUMN */
+.right-column {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px;
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.2);
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--text-primary);
+}
 
+.customer-form-container {
+  min-height: 15%;
+  max-height: 15%;
+  overflow: hidden;
+}
 
+.cart-items-container {
+  min-height: 35%;
+  max-height: 55%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue) transparent;
+}
 
+.cart-summary-container {
+  min-height: 35%;
+  max-height: 30%;
+  overflow: hidden;
+}
 
+/* Scrollbar styles for WebKit browsers */
+.first-row::-webkit-scrollbar,
+.second-row::-webkit-scrollbar,
+.cart-items-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
+.first-row::-webkit-scrollbar-thumb,
+.second-row::-webkit-scrollbar-thumb,
+.cart-items-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+  border-radius: 24px;
+}
 
+.first-row::-webkit-scrollbar-track,
+.second-row::-webkit-scrollbar-track,
+.cart-items-container::-webkit-scrollbar-track {
+  background: transparent;
+}
 
+/* TEXT STYLING */
+.text-light {
+  color: var(--text-primary);
+}
 
+/* Media Queries for responsiveness */
 
+/* Tablets (600px - 1024px) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .explore-container {
+    flex-direction: column;
+    padding: 24px 16px;
+    height: auto;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+    max-height: none;
+  }
+  .left-column {
+    margin-bottom: 28px;
+    padding: 16px 20px;
+  }
+  .right-column {
+    padding: 16px 20px;
+  }
+  .first-row,
+  .second-row,
+  .cart-items-container {
+    max-height: 35vh;
+  }
+  .customer-form-container {
+    min-height: 20%;
+  }
+  .cart-summary-container {
+    min-height: 25%;
+  }
+}
 
+/* Smaller Tablets and Large Mobiles (420px - 599px) */
+@media (max-width: 599px) and (min-width: 420px) {
+  .explore-container {
+    flex-direction: column;
+    padding: 20px 12px;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  .first-row,
+  .second-row,
+  .cart-items-container {
+    max-height: 25vh;
+  }
+  .customer-form-container {
+    min-height: 20%;
+  }
+  .cart-summary-container {
+    min-height: 30%;
+  }
+}
+
+/* Mobile (less than 420px) */
+@media (max-width: 419px) {
+  .explore-container {
+    flex-direction: column;
+    padding: 16px 10px;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  .first-row,
+  .second-row,
+  .cart-items-container {
+    max-height: 20vh;
+  }
+  .customer-form-container {
+    min-height: 20%;
+  }
+  .cart-summary-container {
+    min-height: 30%;
+  }
+}

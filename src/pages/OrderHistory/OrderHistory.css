@@ -1,4 +1,4 @@
-.orders-history-container {
+/* .orders-history-container {
     padding: 20px;
     height: calc(100vh - 5rem);
     box-sizing: border-box;
@@ -34,4 +34,107 @@
     .table td, .table th {
         white-space: nowrap;
     }
+} */
+/* OrderHistory.css */
+
+/* Main Container */
+.orders-history-container {
+  background-color: #1E293B;
+  padding: 20px;
+  border-radius: 8px;
+  color: #F1F5F9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Heading */
+.orders-history-container h2 {
+  color: #F1F5F9;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Responsive Table */
+.table-responsive {
+  background-color: #273449;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #334155;
+  color: #F1F5F9;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.table td {
+  background-color: #273449;
+  color: #F1F5F9;
+  padding: 10px;
+  border: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #334155;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #3B82F6;
+  transition: background-color 0.3s ease;
+}
+
+/* Badges & Status Colors */
+.badge {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.bg-success {
+  background-color: #10B981 !important;
+  color: #ffffff;
+}
+
+.bg-warning {
+  background-color: #F59E0B !important;
+  color: #1E293B !important;
+}
+
+.bg-error {
+  background-color: #EF4444 !important;
+  color: #ffffff;
+}
+
+/* Loading & Empty States */
+.text-center {
+  color: #94A3B8;
+}
+
+/* Payment Method Highlight */
+td:nth-child(5) {
+  color: #0EA5E9;
+  font-weight: 500;
+}
+
+/* Order Total */
+td:nth-child(4) {
+  color: #3B82F6;
+  font-weight: 600;
+}
+
+/* Secondary Text */
+.text-muted {
+  color: #94A3B8 !important;
+}
+
+/* Table Borders Cleanup */
+.table th, .table td {
+  border-top: none;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
 }
