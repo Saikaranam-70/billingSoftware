@@ -81,7 +81,7 @@ graph TB
 
 <p align="center">
   <img src="./src/assets/demo/3.png" width="45%" />
-  <img src="./src/assets/demo/4.png" width="45%" />
+  <img src="./src/assets/demo/8.png" width="45%" />
 </p>
 
 <p align="center">
