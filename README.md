@@ -208,6 +208,7 @@ If you like this project, give it a ⭐
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://github.com/Saikaranam-70/Saikaranam-70/blob/output/github-contribution-grid-snake.svg" />
+  <img src="https://raw.githubusercontent.com/Saikaranam-70/Saikaranam-70/output/github-contribution-grid-snake.svg" />
 </p>
+
 
